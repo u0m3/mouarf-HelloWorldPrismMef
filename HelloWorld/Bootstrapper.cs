@@ -12,8 +12,8 @@ namespace HelloWorld
         {
             base.ConfigureAggregateCatalog();
 
-            this.AggregateCatalog.Catalogs.Add(new AssemblyCatalog(typeof(Bootstrapper).Assembly));
-            this.AggregateCatalog.Catalogs.Add(new DirectoryCatalog(@".\Modules\"));
+            AggregateCatalog.Catalogs.Add(new AssemblyCatalog(typeof(Bootstrapper).Assembly));
+            AggregateCatalog.Catalogs.Add(new DirectoryCatalog(@".\Modules\"));
         }
 
         protected override DependencyObject CreateShell()
