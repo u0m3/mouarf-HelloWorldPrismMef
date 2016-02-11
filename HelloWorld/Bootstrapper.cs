@@ -18,7 +18,7 @@ namespace HelloWorld
 
         protected override DependencyObject CreateShell()
         {
-            return this.Container.GetExportedValue<MainWindow>();
+            return Container.GetExportedValue<MainWindow>();
         }
 
         protected override void InitializeShell()
